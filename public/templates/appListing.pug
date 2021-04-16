@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        include includes/header.pug
+    body
+        .container-fluid#mainBody
+            // container-fluid starts
+            .row(data-bind="foreach: googleApps")
+                a.text-decoration-none.text-dark(data-bind="attr:{href: 'appdetails?pkg=' + appId()}")
+                    .my-2.col-3
+                        .card(style='width: 18rem;')
+                            img.card-img-top(data-bind=`attr:{src: icon()}`)
+                            .card-body
+                                h5.card-title(data-bind="text: title(), style:{'white-space': 'nowrap', overflow: 'hidden'}")
+                                p.card-text(data-bind="text: developer(), style:{'white-space': 'nowrap', overflow: 'hidden'}")
+
+                #footer-div
+                    include  includes/footer.pug
+script(src="/resources/appList.js")

@@ -1,0 +1,19 @@
+{
+  "name": "googleapps",
+  "version": "1.0.0",
+  "description": "list of google top apps",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sparsh sanadya",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "google-play-scraper": "^8.0.2",
+    "mongoose": "^5.12.4",
+    "pug": "^3.0.2",
+    "request": "^2.88.2"
+  }
+}
